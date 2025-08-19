@@ -63,7 +63,7 @@
             }
             }
             stage('Deploy'){
-                sh "docker rm -f $(docker ps -aq) || true"
+                sh "docker rm -f \$(docker ps -aq) || true"
                 sh "docker run -d --name deployment -p 8080:8080 pavandath510/java-spring:v1 "
                 
             }
