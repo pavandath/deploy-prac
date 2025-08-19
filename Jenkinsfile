@@ -41,7 +41,7 @@
                 }
                 steps{
                 echo "************************RUNNING DockerBuild STAGE************************"
-                sh "mkdir build"
+                sh "mkdir build || true"
                 dir ('build'){
                     unstash 'zip-jar'
                 }
