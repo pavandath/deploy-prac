@@ -1,7 +1,7 @@
     pipeline{
         agent any
         environment{
-            SONAR_URL = "http://104.154.180.122:9000"
+            SONAR_URL = "http://34.58.5.6:9000"
             SONAR_TOKEN = credentials('sonar_creds')
         }
         stages{
